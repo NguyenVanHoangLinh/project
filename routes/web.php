@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('trangchu');
+});
+Route::get('/product', function()
+{
+    return view('product');
 });

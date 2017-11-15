@@ -171,10 +171,10 @@
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Mobiles</h6>
-											<li><a href="products.html">Mobile Phones</a></li>
-											<li><a href="products.html">Mp3 Players <span>New</span></a></li>
-											<li><a href="products.html">Popular Models</a></li>
-											<li><a href="products.html">All Tablets<span>New</span></a></li>
+											<li><a href="{{url('/product')}}">Mobile Phones</a></li>
+											<li><a href="{{url('/product')}}">Mp3 Players <span>New</span></a></li>
+											<li><a href="{{url('/product')}}">Popular Models</a></li>
+											<li><a href="{{url('/product')}}">All Tablets<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
@@ -385,5 +385,32 @@
                                 					});
                                 			</script>
                                 			<script type="text/javascript" src="{{ asset('public/frontend/js/jquery.flexisel.js')}}"></script>
+                                			<script type="text/javascript">
+                                            		$(window).load(function() {
+                                            			$("#flexiselDemo2").flexisel({
+                                            				visibleItems:4,
+                                            				animationSpeed: 1000,
+                                            				autoPlay: true,
+                                            				autoPlaySpeed: 3000,
+                                            				pauseOnHover: true,
+                                            				enableResponsiveBreakpoints: true,
+                                            				responsiveBreakpoints: {
+                                            					portrait: {
+                                            						changePoint:568,
+                                            						visibleItems: 1
+                                            					},
+                                            					landscape: {
+                                            						changePoint:667,
+                                            						visibleItems:2
+                                            					},
+                                            					tablet: {
+                                            						changePoint:768,
+                                            						visibleItems: 3
+                                            					}
+                                            				}
+                                            			});
+
+                                            		});
+                                            	</script>
 </body>
 </html>
