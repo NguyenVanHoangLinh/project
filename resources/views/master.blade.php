@@ -162,7 +162,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html" class="act">Home</a></li>
+						<li><a href="{{url('/')}}" class="act">Home</a></li>
 						<!-- Mega Menu -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
@@ -212,7 +212,7 @@
 								<li><a href="codes.html">Short Codes</a></li>     
 							</ul>
 						</li>  
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="{{url('/mail')}}">Mail Us</a></li>
 					</ul>
 				</div>
 			</nav>

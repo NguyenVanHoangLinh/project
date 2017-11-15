@@ -18,3 +18,7 @@ Route::get('/product', function()
 {
     return view('product');
 });
+Route::get('/mail' ,function()
+{
+    return view('mail');
+});
